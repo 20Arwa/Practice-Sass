@@ -1,0 +1,85 @@
+@import "sass/helpers/mixins";
+@import "sass/helpers/varibles";
+
+body {
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Start slider */
+.slider {
+    .img-box { 
+        direction: initial;
+    }
+}
+/* Start Services*/
+.our-service {
+        .services {
+            .service {
+                a {
+                    direction: initial;
+                    justify-content: flex-end;
+                }
+            }
+        }
+}
+/* Start Players */
+.our-players {
+        .players-box {
+            .player {
+                a {
+                    direction: initial;
+                    justify-content: flex-end;
+                }
+            }
+        }
+}
+/* Start Lorem */
+.lorem {
+    position: relative;
+    .lorem-box {
+        .imgs-box {
+            @media #{$maxMobile} {
+                flex-direction: column;
+                gap: 15px
+            }
+            div {
+                margin: 0 15px;
+                cursor: pointer;
+            }
+        }
+    }
+    .zoomed-box {
+        display: none;
+        .lorem-zoomed {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            .img-box {
+                width: 60%;
+                margin: 0 auto;
+            }
+            .close{
+                font-size: 30px;
+                color: $mainColor;
+                cursor: pointer;
+                background-color: white;
+                border-radius: 50%;
+                height: 25px;
+                top: -4%;
+                right: 19%;
+                position: absolute;
+            }
+        }
+        .overlay {
+            @include overlay();
+            background-color: rgba(black, .5);
+        }
+    }
+}
+
+
+
+

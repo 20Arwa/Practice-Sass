@@ -1,0 +1,70 @@
+body {
+  font-family: "Cairo", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Start slider */
+.slider .img-box {
+  direction: initial;
+}
+
+/* Start Services*/
+.our-service .services .service a {
+  direction: initial;
+  justify-content: flex-end;
+}
+
+/* Start Players */
+.our-players .players-box .player a {
+  direction: initial;
+  justify-content: flex-end;
+}
+
+/* Start Lorem */
+.lorem {
+  position: relative;
+}
+@media (max-width: 768px) {
+  .lorem .lorem-box .imgs-box {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+.lorem .lorem-box .imgs-box div {
+  margin: 0 15px;
+  cursor: pointer;
+}
+.lorem .zoomed-box {
+  display: none;
+}
+.lorem .zoomed-box .lorem-zoomed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.lorem .zoomed-box .lorem-zoomed .img-box {
+  width: 60%;
+  margin: 0 auto;
+}
+.lorem .zoomed-box .lorem-zoomed .close {
+  font-size: 30px;
+  color: #e2494c;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50%;
+  height: 25px;
+  top: -4%;
+  right: 19%;
+  position: absolute;
+}
+.lorem .zoomed-box .overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}/*# sourceMappingURL=homepage-rtl.css.map */

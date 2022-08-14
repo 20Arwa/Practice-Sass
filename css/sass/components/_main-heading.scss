@@ -1,0 +1,31 @@
+/* Main Heading */
+.main-heading {
+    width: 100%;
+    margin: 40px 0;
+    text-align: center;
+    position: relative;
+    h3 {
+        width: fit-content;
+        margin: auto;
+        padding: 8px 40px;
+        border-radius: 10px;
+        background-color: $mainColor;
+        color: $fontWhite;
+        &::before {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: #eee;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            z-index: -1;
+        }
+        @media #{$maxSmall} {
+            & {
+                font-size: small;
+            }
+        }
+    }
+}
+/* Main Heading */

@@ -1,0 +1,14 @@
+/*Start Button*/
+.mainButton {
+    border: none;
+    border-radius: 5px;
+    background-color: $mainColor;
+    margin: 15px 20px;
+    padding: 8px 10px;
+    color: $fontWhite;
+    cursor: pointer;
+    &:hover {
+        color: $pColor
+    }
+}
+/*End Button*/

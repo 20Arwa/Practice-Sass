@@ -1,0 +1,21 @@
+// Prefixes
+@mixin prefixes($property, $value, $pres:()){
+    #{$property}: #{$value};
+    @each $pre in $pres {
+        -#{$pre}-#{$property}: $value;
+    };
+}
+// Media Querise
+$colNum: 12;
+@mixin col($num) {
+    width: percentage($num / 12)
+}
+// Overlay
+@mixin overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}

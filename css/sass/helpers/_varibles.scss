@@ -1,0 +1,15 @@
+$lang: "ُEn";
+$directionFlex: initial;
+
+@if $lang == "Ar" {
+    $directionFlex: rtl
+}
+
+$mainColor: #e2494c;
+$mainFontColor: #5f5c5c;
+$pColor: #999;
+$fontWhite: white;
+
+$maxSmall: "(max-width: 576px)";
+$maxMobile: "(max-width: 768px)";
+$maxMedium: "(max-width: 992px)";

@@ -1,0 +1,30 @@
+/* Global */
+* {
+    font-family: 'Roboto', sans-serif;
+    @include prefixes(box-sizing, border-box, webkit moz o)
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+p {
+    color: $pColor
+}
+img {
+    width: 100%;
+}
+.container {
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+}
+.flex {
+    display: flex;
+    direction: $directionFlex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*End Global*/

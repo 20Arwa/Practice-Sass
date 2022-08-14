@@ -1,0 +1,183 @@
+/* Start slider */
+.slider {
+    text-align: center;
+    margin: 30px auto;
+    q {
+        font: {
+            size: 20px;
+            weight: 600;
+            style: italic;
+        }
+        color: $mainFontColor;
+        @media #{$maxSmall} {
+            font-size: 16px;
+        }
+    }
+    .img-box {
+        margin-top: 30px;
+        div {margin: 0 10px}
+        .arrow-right,
+        .arrow-left {
+            font-size: 30px;
+            color: $mainColor;
+            cursor: pointer;
+            @media #{$maxSmall} {
+                font-size: 20px;
+            }
+        }
+    }
+    ul {
+        justify-content: center;
+        li {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 0 4px;
+            background-color: $pColor;
+            border: 2px solid $pColor;
+            cursor: pointer;
+            &.active,
+            &:hover {
+                border-color: $mainColor;
+                background-color: $fontWhite;
+            }
+        }
+    }
+}
+/* End slider */
+/* Start Services*/
+.our-service {
+        .services {
+            @media #{$maxMobile} {
+                flex-wrap: wrap;
+            }
+            .service {
+                margin: 0 20px;
+                @include col(4);
+                @media #{$maxMobile} {
+                    @include col(12);
+                    text-align: center;
+                    margin: 25px 0;
+                }
+                .head {
+                    color: $mainFontColor;
+                    justify-content: flex-start;
+                    @media #{$maxMobile} {
+                        justify-content: center;
+                    }
+                    i {
+                        font-size: 30px;
+                    }
+                    h3 {
+                        margin: 0px 15px
+                    }
+                }
+                a {
+                    justify-content: flex-start;
+                    color: $mainColor;
+                    @media #{$maxMobile} {
+                        justify-content: center;
+                    }
+                    .arrow-read {
+                        margin: 0 5px;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+}
+/* End Services*/
+/* Start Players */
+.our-players {
+        .players-box {
+            gap: 10px;
+            @media #{$maxMobile} {
+                flex-wrap: wrap;
+            }
+            .player {
+                @media #{$maxMobile} {
+                    width: calc(50% - 10px)
+                }
+                @media #{$maxSmall} {
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 25px;
+                }
+                h4 {
+                    margin: 10px 0;
+                    color: $mainFontColor;
+                    justify-content: flex-start;
+                    @media #{$maxSmall} {
+                        justify-content: center;
+                    }
+                    span {
+                        margin: 0 5px;
+                        font-weight: 400;
+                        color: $pColor;
+                    }
+                }
+                a {
+                    justify-content: flex-start;
+                    color: $mainColor;
+                    @media #{$maxSmall} {
+                        justify-content: center;
+                    }
+                    .arrow-read {
+                        margin: 0 5px;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+}
+/* End Players */
+/* Start Lorem */
+.lorem {
+    position: relative;
+    .lorem-box {
+        .imgs-box {
+            @media #{$maxMobile} {
+                flex-direction: column;
+                gap: 15px
+            }
+            div {
+                margin: 0 15px;
+                cursor: pointer;
+            }
+        }
+    }
+    .zoomed-box {
+        display: none;
+        .lorem-zoomed {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            .img-box {
+                width: 60%;
+                margin: 0 auto;
+            }
+            .close{
+                font-size: 30px;
+                color: $mainColor;
+                cursor: pointer;
+                background-color: white;
+                border-radius: 50%;
+                height: 25px;
+                top: -4%;
+                right: 19%;
+                position: absolute;
+            }
+        }
+        .overlay {
+            @include overlay();
+            background-color: rgba(black, .5);
+        }
+    }
+}
+/* End Lorem */
+
+
+
+

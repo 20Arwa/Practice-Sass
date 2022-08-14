@@ -1,0 +1,89 @@
+/* Start Footer */
+footer {
+    margin-top: 60px;
+    background-color: #eee;
+    @media #{$maxSmall} {
+        text-align: center;
+    }
+    h3 {
+        color: $mainFontColor;
+        font: {
+            size: 18px;
+            weight: 400
+        };
+    }
+    .info {
+        align-items: flex-start;
+        padding: 20px 0;
+        @media #{$maxMobile} {
+            flex-direction: column;
+            gap: 15px
+        }
+        .latest {
+            .blog {
+                @media #{$maxSmall} {
+                    flex-direction: column;
+                }
+                div {
+                    &:first-of-type {
+                        padding: 5px;
+                        border: 1px solid $pColor;
+                        @media #{$maxSmall} {
+                            width: 150px;
+                        }
+                    }
+                }
+                .text {
+                    margin: 0 20px;
+                    h4 {
+                        color: $mainColor;
+                        margin-bottom: 0
+                    }
+                }
+            }
+        }
+        .details {
+            margin: 0 30px;
+            @media #{$maxMobile} {
+                margin: 0;
+            }
+            @media #{$maxSmall} {
+                margin: 0 auto;
+            }
+            p {
+                font-size: small;
+                margin: 5px 0;
+                span {
+                    color: $mainColor;
+                }
+            }
+            h4 {
+                margin-bottom: 0;
+            }
+        }
+        .contact {
+            input:not([type="submit"]), textarea {
+                width: 100%;
+                margin: 5px 0;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                &::placeholder {
+                    color: $pColor;
+                }
+            }
+            input[type="submit"] {
+                margin: auto 0;
+            }
+        }
+    }
+    .copyright {
+        border-top: 1.5px solid #ddd;
+        padding: 5px 0;
+        font-size: small;
+        @media #{$maxSmall} {
+            flex-direction: column;
+        }
+    }
+}
+/* End Footer */
